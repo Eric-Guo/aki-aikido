@@ -1,5 +1,5 @@
 class HomePagesController < ApplicationController
-  def homel
+  def home
   end
 
   def contact

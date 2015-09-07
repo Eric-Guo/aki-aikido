@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'home_pages/homel'
+
+  root 'home_pages#home'
 
   get 'home_pages/contact'
 
