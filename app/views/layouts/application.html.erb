@@ -10,26 +10,10 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
     <![endif]-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=gkm8vBQ9yIkflKEqatyGxmRE"></script>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-default">
-      <div class="container">
-				<%= link_to image_tag("aki-logo-1.png", height: '46', alt: "Aikido logo"), '#', id: "logo" %>
-        <nav>
-        	<ul class="nav navbar-nav">
-						<li><%= link_to t(:about_aiki_aikido),   '#' %></li>
-            <li><%= link_to t(:classes_schedule),   '#' %></li>
-            <li><%= link_to t(:gallery),   '#' %></li>
-            <li><%= link_to t(:news),   '#' %></li>
-            <li><%= link_to t(:contact),   '#' %></li>
-        	</ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "中文",   '#' %></li>
-            <li><%= link_to "English",   '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render "layouts/header"  %>
 
 		<div class="banner">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -72,10 +56,6 @@
       <%= yield %>
     </div>
 
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </footer>
+    <%= render "layouts/footer" %>
   </body>
 </html>

@@ -2,7 +2,10 @@ Rails.application.routes.draw do
 
   root 'home_pages#home'
 
-  get 'home_pages/contact'
+  get 'classes' => 'home_pages#classes'
+  
+  get 'contact' => 'home_pages#contact'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

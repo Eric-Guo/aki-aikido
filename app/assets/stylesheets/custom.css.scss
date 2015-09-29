@@ -4,8 +4,14 @@
 
 /* universal */
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   padding-top: 60px;
+  margin-bottom: 60px;
   font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
@@ -53,10 +59,25 @@ p {
 
 nav {
 	margin-top: 6px;
+  margin-left: 90px;
 }
 
 .banner {
 	margin-top: -18px;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #222222;
+  p {
+    margin-top: 16px;
+  }
 }
 
 /* home-introduce */
@@ -77,3 +98,16 @@ p {
 .O-Sensei {
   margin-top: 60px;
 }
+
+/* classes */
+
+.classes .table {
+  font-size: 16px;
+  margin-top: 20px;
+    .class-date {
+      padding-top: 28px;
+    }
+}
+
+
+/* contact */

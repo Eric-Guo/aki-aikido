@@ -1,0 +1,18 @@
+<header class="navbar navbar-fixed-top navbar-default">
+  <div class="container">
+		<%= link_to image_tag("aki-logo-1.png", height: '46', alt: "Aikido logo"), '#', id: "logo" %>
+    <nav>
+    	<ul class="nav navbar-nav">
+				<li><%= link_to t(:about_aiki_aikido),   root_path %></li>
+        <li><%= link_to t(:classes_schedule),   classes_path %></li>
+        <li><%= link_to t(:gallery),   '#' %></li>
+        <li><%= link_to t(:news),   '#' %></li>
+        <li><%= link_to t(:contact),   contact_path %></li>
+    	</ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "中文",   '#' %></li>
+        <li><%= link_to "English",   '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
