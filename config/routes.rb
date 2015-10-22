@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :posts
   root 'home_pages#home'
 
   get 'classes' => 'home_pages#classes'
