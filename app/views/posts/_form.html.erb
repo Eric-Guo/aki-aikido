@@ -2,11 +2,39 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :title %>
-    <%= f.input :content,  as: :text %>
+    <%= f.input :title, placeholder: 'Title' %>
+    <%= f.input :content,  as: :text, input_html: { id: "editor" }  %>
   </div>
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+
+	var editor;
+
+	editor = new Simditor({
+	  textarea: $('#editor'),
+	  placeholder: '',
+	  defaultImage: 'images/image.png',
+	  params: {},
+	  upload: true,
+	  tabIndent: true,
+	  toolbar: true,
+	  toolbarFloat: true,
+	  toolbarFloatOffset: 0,
+	  toolbarHidden: false,
+	  pasteImage: false
+	});
+
+	var uploader = simple.uploader({
+    url: '/public'
+	});
+
+	$('#select-file').on('change', function(e) {
+    uploader.upload(this.files);
+});
+
+</script>
