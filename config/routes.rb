@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   root 'home_pages#home'
 
   get 'classes' => 'home_pages#classes'
-  
   get 'contact' => 'home_pages#contact'
+  get 'aikido'  => 'home_pages#aikido'
+  get 'dojo'    => 'home_pages#dojo'
+  get 'newbie'  => 'home_pages#newbie'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

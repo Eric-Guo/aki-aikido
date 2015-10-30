@@ -7,4 +7,11 @@ class HomePagesController < ApplicationController
 
   def contact
   end
+
+  def aikido
+  end
+
+  def dojo
+  end
+  
 end
