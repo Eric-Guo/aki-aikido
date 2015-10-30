@@ -13,5 +13,8 @@ class HomePagesController < ApplicationController
 
   def dojo
   end
+
+  def adminaki
+  end
   
 end
